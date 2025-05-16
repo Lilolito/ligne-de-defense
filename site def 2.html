@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Défense Nationale - Scroll vers Forces Armées</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6fa;
+      color: #222;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 40px 20px;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 24px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .hero-content p {
+      font-size: 1.3rem;
+      margin-bottom: 32px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .btn {
+      background: #43b047;
+      color: white;
+      font-size: 1.15rem;
+      padding: 16px 36px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(60,60,60,0.15);
+      display: inline-block;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #368a38;
+    }
+    /* Section Forces Armées */
+    .section-title {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin: 40px 0 10px;
+      color: #163366;
+    }
+    .underline {
+      width: 120px;
+      height: 4px;
+      background: #43b047;
+      margin: 0 auto 40px;
+      border-radius: 3px;
+    }
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(60,60,90,0.09);
+      padding: 32px 28px 28px 28px;
+      width: 350px;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: box-shadow 0.2s;
+      position: relative;
+    }
+    .card:hover {
+      box-shadow: 0 4px 24px rgba(60,60,90,0.13);
+    }
+    .card img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      margin-bottom: 16px;
+      margin-left: -4px;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #163366;
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
+    .card-desc {
+      font-size: 1.08rem;
+      color: #222;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Défendre la Nation, Protéger la Paix</h1>
+      <p>Découvrez notre stratégie de défense nationale, nos forces et nos missions.<br>Ensemble, nous travaillons pour protéger les intérêts de notre nation.</p>
+      <a href="#forces" class="btn">Explorer Nos Forces Armées</a>
+    </div>
+  </section>
+
+  <div class="section-title">Forces Armées</div>
+  <span class="underline"></span>
+
+  <div class="cards-container" id="forces">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+      <div class="card-title">Armée de Terre</div>
+      <div class="card-desc">
+        La plus grande et la plus ancienne branche des forces armées, responsable des opérations militaires terrestres.
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-flat-wind-cartoon-blue-ocean-wave-image_1302998.jpg" alt="Marine Nationale" />
+      <div class="card-title">Marine Nationale</div>
+      <div class="card-desc">
+        Branche navale, responsable des opérations maritimes et de la souveraineté en mer.
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3079/3079122.png" alt="Armée de l'Air et de l'Espace" />
+      <div class="card-title">Armée de l'Air et de l'Espace</div>
+      <div class="card-desc">
+        Défense aérienne et spatiale, contrôle et exploitation de l’air et de l’espace.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
